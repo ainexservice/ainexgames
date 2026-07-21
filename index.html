@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AINEX GAMES | Official Platform</title>
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+/*=====================================================
+PART 2.1
+RESET + HEADER + HERO
+======================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f8ff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  
+  width: 100%;
+  
+  height: 90px;
+  
+  background: #fff;
+  
+  display: flex;
+  
+  justify-content: space-between;
+  
+  align-items: center;
+  
+  padding: 0 40px;
+  
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+  
+  position: sticky;
+  
+  top: 0;
+  
+  z-index: 999;
+  
+}
+
+.logo {
+  
+  display: flex;
+  
+  align-items: center;
+  
+  gap: 15px;
+  
+}
+
+.logo img {
+  
+  width: 65px;
+  
+  height: 65px;
+  
+  border-radius: 15px;
+  
+  object-fit: cover;
+  
+}
+
+.logo h2 {
+  
+  font-size: 30px;
+  
+  font-weight: 800;
+  
+  color: #1565ff;
+  
+  line-height: 1;
+  
+}
+
+.logo p {
+  
+  font-size: 13px;
+  
+  color: #666;
+  
+  margin-top: 5px;
+  
+  letter-spacing: 1px;
+  
+}
+
+.whatsapp {
+  
+  display: flex;
+  
+  align-items: center;
+  
+  gap: 10px;
+  
+  padding: 13px 22px;
+  
+  background: #22c55e;
+  
+  color: #fff;
+  
+  text-decoration: none;
+  
+  font-weight: 600;
+  
+  border-radius: 14px;
+  
+  transition: .35s;
+  
+}
+
+.whatsapp:hover {
+  
+  transform: translateY(-4px);
+  
+  box-shadow: 0 15px 30px rgba(34, 197, 94, .30);
+  
+}
+
+/* ================= NOTICE ================= */
+
+.notice {
+  
+  max-width: 1450px;
+  
+  margin: 20px auto;
+  
+  background: #fff;
+  
+  border-radius: 40px;
+  
+  padding: 14px;
+  
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
+  
+}
+
+.notice marquee {
+  
+  font-size: 16px;
+  
+  font-weight: 600;
+  
+  color: #444;
+  
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  
+  max-width: 1450px;
+  
+  margin: auto;
+  
+  padding: 40px;
+  
+  display: flex;
+  
+  justify-content: space-between;
+  
+  align-items: center;
+  
+  gap: 20px;
+  
+}
+
+.left {
+  
+  flex: 1;
+  
+}
+
+.left h1 {
+  
+  font-size: 68px;
+  
+  font-weight: 800;
+  
+  line-height: 1.1;
+  
+}
+
+.left span {
+  
+  background: linear-gradient(90deg, #0d6efd, #7b2cff, #ff0080);
+  
+  -webkit-background-clip: text;
+  
+  color: transparent;
+  
+}
+
+.left p {
+  
+  margin: 25px 0;
+  
+  font-size: 20px;
+  
+  line-height: 1.8;
+  
+  color: #666;
+  
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.right {
+  
+  flex: 1.2;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+}
+
+.right img {
+  
+  width: 100%;
+  
+  max-width: 780px;
+  
+  height: auto;
+  
+  display: block;
+  
+  animation: float 4s ease-in-out infinite;
+  
+}
+
+@keyframes float {
+  
+  0% {
+    
+    transform: translateY(0px);
+    
+  }
+  
+  50% {
+    
+    transform: translateY(-10px);
+    
+  }
+  
+  100% {
+    
+    transform: translateY(0px);
+    
+  }
+  
+}
+/*=====================================================
+PART 2.2
+FEATURES + TITLE + CARDS
+======================================================*/
+
+/* ========== FEATURE BOX ========== */
+
+.features {
+  
+  display: flex;
+  
+  gap: 18px;
+  
+  margin-top: 35px;
+  
+  flex-wrap: wrap;
+  
+}
+
+.features div {
+  
+  width: 90px;
+  
+  height: 90px;
+  
+  background: #fff;
+  
+  border-radius: 20px;
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+  
+  transition: .35s;
+  
+  cursor: pointer;
+  
+}
+
+.features div:nth-child(1) {
+  
+  color: #8b5cf6;
+  
+  border-top: 4px solid #8b5cf6;
+  
+}
+
+.features div:nth-child(2) {
+  
+  color: #2563eb;
+  
+  border-top: 4px solid #2563eb;
+  
+}
+
+.features div:nth-child(3) {
+  
+  color: #f97316;
+  
+  border-top: 4px solid #f97316;
+  
+}
+
+.features div:nth-child(4) {
+  
+  color: #06b6d4;
+  
+  border-top: 4px solid #06b6d4;
+  
+}
+
+.features div:hover {
+  
+  transform: translateY(-10px) scale(1.06);
+  
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .15);
+  
+}
+
+.features i {
+  
+  font-size: 30px;
+  
+  margin-bottom: 8px;
+  
+}
+
+.features p {
+  
+  font-size: 13px;
+  
+  font-weight: 700;
+  
+  color: #333;
+  
+}
+
+/* ========== TITLE ========== */
+
+.section-title {
+  
+  text-align: center;
+  
+  padding: 70px 20px 35px;
+  
+}
+
+.section-title h2 {
+  
+  font-size: 48px;
+  
+  font-weight: 800;
+  
+  color: #111;
+  
+}
+
+.section-title p {
+  
+  margin-top: 10px;
+  
+  font-size: 18px;
+  
+  color: #777;
+  
+}
+
+/* ========== GRID ========== */
+
+.cards {
+  
+  max-width: 1450px;
+  
+  margin: auto;
+  
+  padding: 20px;
+  
+  display: grid;
+  
+  grid-template-columns: repeat(4, 1fr);
+  
+  gap: 25px;
+  
+}
+
+/* ========== CARD ========== */
+
+.card {
+  
+  background: #fff;
+  
+  border-radius: 22px;
+  
+  padding: 24px;
+  
+  position: relative;
+  
+  overflow: hidden;
+  
+  transition: .35s;
+  
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+  
+}
+
+.card::before {
+  
+  content: "";
+  
+  position: absolute;
+  
+  top: 0;
+  
+  left: 0;
+  
+  width: 100%;
+  
+  height: 5px;
+  
+  background: linear-gradient(90deg, #2563eb, #8b5cf6, #ec4899);
+  
+}
+
+.card:hover {
+  
+  transform: translateY(-10px);
+  
+  box-shadow: 0 20px 45px rgba(0, 0, 0, .15);
+  
+}
+
+/* ========== LOGO ========== */
+
+.platform-logo {
+  
+  width: 85px;
+  
+  height: 85px;
+  
+  margin: auto;
+  
+  border-radius: 22px;
+  
+  background: #f4f7ff;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  overflow: hidden;
+  
+}
+
+.platform-logo img {
+  
+  width: 70px;
+  
+  height: 70px;
+  
+  object-fit: contain;
+  
+}
+
+/* ========== NAME ========== */
+
+.card h3 {
+  
+  margin-top: 18px;
+  
+  text-align: center;
+  
+  font-size: 24px;
+  
+  font-weight: 700;
+  
+  color: #222;
+  
+}
+
+/* ========== FEATURES LIST ========== */
+
+.list {
+  
+  margin-top: 18px;
+  
+}
+
+.list li {
+  
+  list-style: none;
+  
+  padding: 8px 0;
+  
+  display: flex;
+  
+  align-items: center;
+  
+  gap: 10px;
+  
+  font-size: 15px;
+  
+  color: #555;
+  
+}
+
+.list i {
+  
+  color: #22c55e;
+  
+}
+
+/*=====================================================
+PART 2.3
+BUTTONS + FOOTER + RESPONSIVE
+======================================================*/
+
+/* ===== BUTTONS ===== */
+
+.buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+margin-top:22px;
+
+}
+
+.register{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:50px;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:16px;
+
+font-weight:700;
+
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+color:#fff;
+
+transition:.35s;
+
+box-shadow:0 12px 25px rgba(37,99,235,.25);
+
+}
+
+.register:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 18px 35px rgba(37,99,235,.35);
+
+}
+
+.login{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:50px;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-size:16px;
+
+font-weight:700;
+
+background:#fff;
+
+color:#2563eb;
+
+border:2px solid #2563eb;
+
+transition:.35s;
+
+}
+
+.login:hover{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+margin-top:80px;
+
+padding:40px;
+
+background:#fff;
+
+text-align:center;
+
+border-top:1px solid #eee;
+
+}
+
+footer h3{
+
+font-size:32px;
+
+font-weight:800;
+
+color:#2563eb;
+
+margin-bottom:10px;
+
+}
+
+footer p{
+
+font-size:15px;
+
+color:#777;
+
+line-height:1.8;
+
+}
+
+/* ===== FLOATING WHATSAPP ===== */
+
+.float-whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:60px;
+
+height:60px;
+
+background:#22c55e;
+
+color:#fff;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+text-decoration:none;
+
+box-shadow:0 15px 30px rgba(34,197,94,.30);
+
+z-index:999;
+
+transition:.35s;
+
+}
+
+.float-whatsapp:hover{
+
+transform:scale(1.12);
+
+}
+
+/* ===== SCROLL BUTTON ===== */
+
+#topBtn{
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 12px 25px rgba(37,99,235,.30);
+
+transition:.35s;
+
+}
+
+#topBtn:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1200px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.features{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+height:auto;
+
+padding:15px;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.logo h2{
+
+font-size:24px;
+
+}
+
+.left h1{
+
+font-size:42px;
+
+}
+
+.left p{
+
+font-size:16px;
+
+}
+
+.right img{
+
+max-width:100%;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+padding:15px;
+
+}
+
+.features{
+
+justify-content:center;
+
+}
+
+.notice{
+
+margin:15px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.section-title p{
+
+font-size:16px;
+
+}
+
+footer{
+
+padding:25px;
+
+}
+
+.float-whatsapp{
+
+width:55px;
+
+height:55px;
+
+font-size:25px;
+
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header>
+
+<div class="logo">
+
+<img src="images/logo.png" alt="AINEX SERVICES">
+
+<div>
+
+<h2>AINEX GAMES</h2>
+
+<p>Official Platform</p>
+
+</div>
+
+</div>
+
+<a href="https://wa.me/919236414171"
+target="_blank"
+class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp Support
+
+</a>
+
+</header>
+
+<!--================ RUNNING NOTICE ================-->
+
+<div class="notice">
+
+<marquee scrollamount="6">
+
+🎁 Welcome Bonus Available • Official Links • Fast Registration • Secure Login • 24×7 Support • Play Responsibly
+
+</marquee>
+
+</div>
+
+<!--================ HERO SECTION ================-->
+
+<section class="hero">
+
+<div class="left">
+
+<h1>
+
+Join India's
+
+<br>
+
+<span>Top Gaming Platforms</span>
+
+</h1>
+
+<p>
+
+Register using our official links and enjoy fast registration with secure access.
+
+</p>
+
+<div class="features">
+
+<div>
+
+<i class="fas fa-gift"></i>
+
+<p>Bonus</p>
+
+</div>
+
+<div>
+
+<i class="fas fa-shield-alt"></i>
+
+<p>Secure</p>
+
+</div>
+
+<div>
+
+<i class="fas fa-bolt"></i>
+
+<p>Fast</p>
+
+</div>
+
+<div>
+
+<i class="fas fa-headset"></i>
+
+<p>Support</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<img src="images/banner.png"
+alt="AINEX SERVICES Banner">
+
+</div>
+
+</section>
+
+<!--================ TITLE ================-->
+
+<section class="section-title">
+
+<h2>
+
+Top Platforms
+
+</h2>
+
+<p>
+
+Choose Your Favourite Platform
+
+</p>
+
+</section>
+
+<section class="cards">
+
+<!-- ==========================================
+BDG WIN
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/bdg-win.png" alt="BDG WIN">
+</div>
+
+<h3>BDG WIN</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Welcome Bonus</li>
+<li><i class="fa-solid fa-bolt"></i> Instant Register</li>
+<li><i class="fa-solid fa-shield-halved"></i> Trusted Platform</li>
+<li><i class="fa-solid fa-headset"></i> 24×7 Support</li>
+</ul>
+
+<div class="buttons">
+
+<a href="YOUR_BDG_REGISTER_LINK"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="YOUR_BDG_LOGIN_LINK"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+DAMMAN GAMES
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/damman-games.png" alt="DAMMAN GAMES">
+</div>
+
+<h3>DAMMAN GAMES</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Daily Bonus</li>
+<li><i class="fa-solid fa-bolt"></i> Quick Register</li>
+<li><i class="fa-solid fa-wallet"></i> Fast Withdrawal</li>
+<li><i class="fa-solid fa-headset"></i> Live Support</li>
+</ul>
+
+<div class="buttons">
+
+<a href="YOUR_DAMMAN_REGISTER_LINK"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="YOUR_DAMMAN_LOGIN_LINK"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+91 CLUB
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/91club.png" alt="91 CLUB">
+</div>
+
+<h3>91 CLUB</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Welcome Reward</li>
+<li><i class="fa-solid fa-bolt"></i> Fast Signup</li>
+<li><i class="fa-solid fa-shield-halved"></i> Secure Login</li>
+<li><i class="fa-solid fa-headset"></i> Customer Support</li>
+</ul>
+
+<div class="buttons">
+
+<a href="YOUR_91_REGISTER_LINK"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="YOUR_91_LOGIN_LINK"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+82 LOTTERY
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/82lottery.png" alt="82 LOTTERY">
+</div>
+
+<h3>82 LOTTERY</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> New User Bonus</li>
+<li><i class="fa-solid fa-bolt"></i> Instant Join</li>
+<li><i class="fa-solid fa-lock"></i> Safe Platform</li>
+<li><i class="fa-solid fa-headset"></i> 24×7 Help</li>
+</ul>
+
+<div class="buttons">
+
+<a href="https://www.zndvkt82.com/#/register?invitationCode=31737369163"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="https://www.zndvkt82.com/#/register?invitationCode=31737369163"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+JIO LOTTERY
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/jio-lottery.png" alt="JIO LOTTERY">
+</div>
+
+<h3>JIO LOTTERY</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Welcome Bonus</li>
+<li><i class="fa-solid fa-bolt"></i> Fast Registration</li>
+<li><i class="fa-solid fa-shield-halved"></i> Secure Platform</li>
+<li><i class="fa-solid fa-headset"></i> Live Support</li>
+</ul>
+
+<div class="buttons">
+
+<a href="https://www.jioaskfahvmao.com/#/pages/login/register?invitationCode=9514006241&regSourceFlag=1"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="https://www.jioaskfahvmao.com/#/pages/login/register?invitationCode=9514006241&regSourceFlag=1"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+GOA GAMES
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/goa-games.png" alt="GOA GAMES">
+</div>
+
+<h3>GOA GAMES</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Daily Bonus</li>
+<li><i class="fa-solid fa-bolt"></i> Quick Signup</li>
+<li><i class="fa-solid fa-wallet"></i> Fast Withdraw</li>
+<li><i class="fa-solid fa-headset"></i> 24×7 Support</li>
+</ul>
+
+<div class="buttons">
+
+<a href="https://www.goaokp.com/#/register?invitationCode=84588683919"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="https://www.goaokp.com/#/register?invitationCode=84588683919"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+55 CLUB
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/55club.png" alt="55 CLUB">
+</div>
+
+<h3>55 CLUB</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Welcome Bonus</li>
+<li><i class="fa-solid fa-bolt"></i> Instant Join</li>
+<li><i class="fa-solid fa-shield-halved"></i> Safe Platform</li>
+<li><i class="fa-solid fa-headset"></i> Customer Care</li>
+</ul>
+
+<div class="buttons">
+
+<a href="YOUR_55_REGISTER_LINK"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="YOUR_55_LOGIN_LINK"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+<!-- ==========================================
+BIG MUMBAI
+========================================== -->
+
+<div class="card">
+
+<div class="platform-logo">
+<img src="images/big-mumbai.png" alt="BIG MUMBAI">
+</div>
+
+<h3>BIG MUMBAI</h3>
+
+<ul class="list">
+<li><i class="fa-solid fa-gift"></i> Welcome Reward</li>
+<li><i class="fa-solid fa-bolt"></i> Easy Register</li>
+<li><i class="fa-solid fa-shield-halved"></i> Trusted Platform</li>
+<li><i class="fa-solid fa-headset"></i> Fast Support</li>
+</ul>
+
+<div class="buttons">
+
+<a href="YOUR_BIG_REGISTER_LINK"
+target="_blank"
+class="register">
+REGISTER
+</a>
+
+<a href="YOUR_BIG_LOGIN_LINK"
+target="_blank"
+class="login">
+LOGIN
+</a>
+
+</div>
+
+</div>
+
+
+
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer>
+
+<h3>AINEX SERVICES</h3>
+
+<p>
+
+© 2026 AINEX SERVICES | All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- Floating WhatsApp -->
+
+<a href="https://wa.me/919236414171"
+
+class="float-whatsapp"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<script>
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+// ======================
+// Card Animation
+// ======================
+
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show-card");
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+observer.observe(card);
+
+});
+
+// ======================
+// Register Button
+// ======================
+
+document.querySelectorAll(".register").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+btn.style.transform="scale(.96)";
+
+setTimeout(()=>{
+
+btn.style.transform="scale(1)";
+
+},150);
+
+});
+
+});
+
+// ======================
+// Login Button
+// ======================
+
+document.querySelectorAll(".login").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+btn.style.transform="scale(.96)";
+
+setTimeout(()=>{
+
+btn.style.transform="scale(1)";
+
+},150);
+
+});
+
+});
+
+// ======================
+// Floating Animation
+// ======================
+
+const hero=document.querySelector(".right img");
+
+if(hero){
+
+setInterval(()=>{
+
+hero.style.transform="translateY(-8px)";
+
+setTimeout(()=>{
+
+hero.style.transform="translateY(0px)";
+
+},1000);
+
+},2000);
+
+}
+
+// ======================
+// Footer Year
+// ======================
+
+document.querySelector("footer p").innerHTML=
+
+"© "+new Date().getFullYear()+" AINEX SERVICES | All Rights Reserved";
+</script>
+
+</body>
+
+</html>
